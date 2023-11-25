@@ -1,0 +1,135 @@
+body{
+    background-color: #008374b7!important;
+}
+
+.b{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b p select{
+  width: 360px;
+}
+
+* {
+    box-sizing: border-box;
+
+  }
+  a{
+    text-decoration: none!important;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  #regForm {
+    background-color: #ffffff;
+    margin: 100px auto ;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+
+  .time{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0% 1%;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  .a {
+    display: inline-block;
+    align-items: center;
+    
+    
+  
+  
+  }
+  .drop {
+    
+    width: 60%;
+    height: 50px;
+    font-size: x-large;
+    border: 1px solid  #04AA6D;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    /* background: #8eb852; */
+    color:  #04AA6D;
+    padding-top: 0.5rem;
+    
+  }
+.drop:hover{
+  color: #fff;
+  background-color:  #04AA6D;
+}
+  .drop option{
+    color: #04AA6D;
+    background-color:  #fff;
+  }
+  .drop option:hover{
+    color: #fff;
+    background-color:  #04AA6D;
+  }

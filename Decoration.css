@@ -1,0 +1,277 @@
+.hero1 {
+  width: 100%;
+  position: relative;
+  background: var(--color-primary);
+  /* padding: 60px 0 0 0; */
+}
+
+@media (min-width: 1365px) {
+  .hero1 {
+    background-attachment: fixed;
+  }
+}
+
+.hero1 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero1 p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero1 .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero1 .btn-get-started:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero1 .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero1 .btn-watch-video i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.hero1 .btn-watch-video:hover i {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .hero1 h2 {
+    font-size: 36px;
+  }
+
+  .hero1 .btn-get-started,
+  .hero1 .btn-watch-video {
+    font-size: 14px;
+  }
+}
+
+.hero1 .icon-boxes {
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .hero1 .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: #fff;
+  }
+}
+
+.hero1 .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #008d7d;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero1 .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.hero1 .icon-box .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.hero1 .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero1 .icon-box:hover {
+  background: #009786;
+}
+
+.hero1 .icon-box:hover .title a,
+.hero1 .icon-box:hover .icon {
+  color: #fff;
+}
+
+/* ------------------------theme------------------------------ */
+
+.collapsible {
+  background-color: white;
+  margin: 1%;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #008d7d;
+  color: #fff;
+}
+
+.content {
+  width: auto;
+  height: 100%;
+  padding: 0px 0px 0px 0px ;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+  margin-left: 2%;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0% 1%;
+}
+.wed{
+  gap: 0% 1%;
+}
+
+
+@media screen and (max-width: 426px) {
+  .layout {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1% 0%;
+  }
+  .image {
+    width: 251px;
+    height: 293px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    
+  }
+  .card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    width: 414px;
+    
+  }
+  .content {
+   
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1% 0%;
+  }
+}
+@media screen and (max-width: 768px){
+  .layout {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1% 0%;
+  }
+}
+@media screen and (max-width:376px) {
+  .layout{
+    width: 100%;
+  }
+  .l-item {
+    width: 100%;
+   
+  
+  }
+}
+.l-item {
+  box-sizing: border-box;
+  width: auto;
+  border: 0px solid black;
+  text-align: center;
+  margin-bottom: 3%;
+
+}
+
+.l-item .img2{
+  width: 100%;
+}
+
+.layout > img{
+  width: 100%;
+}
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  max-height: 400px;
+  border-radius: 3%;
+
+
+}
+.image {
+  width: 400px;
+  height: 293px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card h2 {
+  margin-top: 3%;
+}
+
+.about {
+  overflow: scroll;
+}
+
+.text {
+  padding-left: 8%;
+  padding-right: 5%;
+  text-align: start;
+  font-size: 20px;
+}
